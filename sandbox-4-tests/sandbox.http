@@ -1,0 +1,88 @@
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+# =======================
+#     STUART
+# =======================
+
+http://localhost:8080/hey
+
+###
+
+# 5- simple post request
+
+POST http://localhost:8080/yo
+
+{
+  "message": "Yo it's John Doe",
+  "who": "Sam Le Pirate"
+}
+
+###
+
+# =======================
+#     LEONARD
+# =======================
+
+# service
+http://localhost:8081/hi
+
+### 
+
+# 🚑 healthchecking: send request with redis-server on, then off
+http://localhost:8081/health
+
+# ⚠️ don't forget to restart redis-server
+
+
+###
+
+# =======================
+#  RAJ talks to LEONARD
+# =======================
+
+http://localhost:8086/talk
+
+###
+
+# =======================
+#  SHELDON ✊✊✊ PENNY
+# =======================
+
+# Try with and without Penny
+http://localhost:8085/go
+
+###
+
+# ===================================
+#  HOWARD talks to PENNY and LEONARD
+# ===================================
+
+# Services list from SHELDON
+http://localhost:8085/discovery
+
+###
+http://localhost:8087/talk/penny
+
+###
+http://localhost:8087/talk/leonard
+
+
+###
+
+# ===================================
+#  write your own backend
+# ===================================
+
+# launch run.sh in /demo-backend/ms-http-backend
+
+http://localhost:9090/records
+
+### 
+
+# launch run.sh in /demo-backend/simple-microservice
+http://localhost:9090/records
+
+###
+
+# launch run.sh in /demo-backend/call-simple-microservice
+http://localhost:9096/call/ping

@@ -1,0 +1,15 @@
+**/.vagrant/*
+.idea/
+.vertx/
+*.class
+*.log
+*.iml
+.project
+.classpath
+.settings
+.vscode
+dump.rdb
+target/
+out/
+project/target/*
+project/project/*

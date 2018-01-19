@@ -60,3 +60,25 @@ pronounce "bee"
 ## Components
 
 - 🚧 WIP
+
+## Various things and resources
+
+- https://github.com/localtunnel/localtunnel
+
+
+## Test routes
+
+
+See: https://github.com/kylebebak/Requester
+
+post(
+  'http://localhost:8080/yo',
+  json={
+    "message": "Yo it's John Doe",
+    "who": "Sam Le Pirate..."
+  }
+)
+
+## Run
+
+See: https://github.com/Wramberg/TerminalView
